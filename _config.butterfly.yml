@@ -291,7 +291,8 @@ aside:
       text: Follow Me
       link: https://github.com/xxxxxx
   card_announcement:
-    enable: true
+    # 卡片通知框
+    enable: false
     content: This is my Blog
   card_recent_post:
     enable: true
