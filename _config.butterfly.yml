@@ -56,7 +56,7 @@ social:
 favicon: /img/favicon.ico
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /image/avatar.png
   effect: false
 
 # Disable all banner images
@@ -110,7 +110,7 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: 'Page Not Found'
   background: /img/error-page.png
 
@@ -424,8 +424,8 @@ copy:
   enable: true
   # Add the copyright information after copied content
   copyright:
-    enable: false
-    limit_count: 150
+    enable: true
+    limit_count: 50
 
 # Need to install the hexo-wordcount plugin
 wordcount:
@@ -484,6 +484,9 @@ search:
 
   # Local Search
   local_search:
+    labels:
+      input_placeholder: Search for Posts
+      hits_empty: "We didn't find any results for the search: ${query}" # 如果没有查到内容相关内容显示
     # Preload the search data when the page loads.
     preload: false
     # Show top n results per article, show all results by setting to -1
@@ -491,6 +494,7 @@ search:
     # Unescape html strings to the readable one.
     unescape: false
     CDN:
+    enable: true
 
   # Docsearch
   # https://docsearch.algolia.com/
@@ -828,8 +832,8 @@ blog_title_font:
 hr_icon:
   enable: true
   # The unicode value of Font Awesome icon, such as '\3423'
-  icon:
-  icon_top:
+  icon: '\f197'
+  icon_top: -10px
 
 # Typewriter Effect
 # https://github.com/disjukr/activate-power-mode
@@ -881,8 +885,8 @@ fireworks:
 
 # Mouse click effects: Heart symbol
 click_heart:
-  enable: false
-  mobile: false
+  enable: true
+  mobile: true
 
 # Mouse click effects: words
 clickShowText:
